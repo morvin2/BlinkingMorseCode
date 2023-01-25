@@ -5,4 +5,4 @@ Long blink is equal to dash
 
 Short blink is equal to dot
 
-refer https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.semanticscholar.org%2Fpaper%2FAugmentative-and-Alternative-Communication-device-Mukherjee-Chatterjee%2F7e8bcec95f563c79ec0649743ba01b30412fce6c&psig=AOvVaw2wONv6YJRiX2PyV3J75sme&ust=1674755086015000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCA7YGj4_wCFQAAAAAdAAAAABAE for the morse code.
+refer https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg for the morse code.
