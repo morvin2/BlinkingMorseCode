@@ -53,7 +53,7 @@ while(ret):
                  #       print("long blink")
                         lisst.clear()
                         lisst3.append("dash")
-                    if len(lisst2) >40:
+                    if len(lisst2) >50:
                    #     print("change letter")
                    #     print(lisst3)
                         if lisst3 == ["dot", "dash"]:
