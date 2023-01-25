@@ -45,16 +45,17 @@ while(ret):
                 else:
                     cv2.putText(img, "Eyes open!", (70,70), cv2.FONT_HERSHEY_PLAIN, 2,(255,255,255),2)
                     lisst2.append(1)
-                    if len(lisst) <5 and len(lisst)!=0:
+                    if len(lisst) <7 and len(lisst)!=0:
                   #      print("short blink")
                         lisst.clear()
                         lisst3.append("dot")
-                    elif len(lisst) >5:
+                    elif len(lisst) >7:
                  #       print("long blink")
                         lisst.clear()
                         lisst3.append("dash")
-                    if len(lisst2) >50:
+                    if len(lisst2) >40:
                    #     print("change letter")
+                        cv2.putText(img, "Next letter!", (70,470), cv2.FONT_HERSHEY_PLAIN, 2,(255,255,255),2)
                    #     print(lisst3)
                         if lisst3 == ["dot", "dash"]:
                             msg.append("A")
@@ -147,7 +148,15 @@ while(ret):
                     #This will print on console and restart the algorithm
                  #   print("Blink detected--------------")
                     lisst.append(1)
+                   # cv2.waitKey(3000)
                     first_read=True
+          #  print(lisst[-6:-1])
+    #        if lisst2[-22:-1] == con2:
+        #        print("eyes are indeed open")
+        #        lisst2.clear()
+        #    if lisst[-45:-1] == con:
+       #         print("that's a code")
+       #         lisst.clear()
                         
     else:
         cv2.putText(img,"No face detected",(100,100),cv2.FONT_HERSHEY_PLAIN, 3, (0,255,0),2)
