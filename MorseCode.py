@@ -147,15 +147,7 @@ while(ret):
                     #This will print on console and restart the algorithm
                  #   print("Blink detected--------------")
                     lisst.append(1)
-                   # cv2.waitKey(3000)
                     first_read=True
-          #  print(lisst[-6:-1])
-    #        if lisst2[-22:-1] == con2:
-        #        print("eyes are indeed open")
-        #        lisst2.clear()
-        #    if lisst[-45:-1] == con:
-       #         print("that's a code")
-       #         lisst.clear()
                         
     else:
         cv2.putText(img,"No face detected",(100,100),cv2.FONT_HERSHEY_PLAIN, 3, (0,255,0),2)
