@@ -13,6 +13,7 @@ eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tre
 
 first_read = True
 #Starting the video capture
+
 cap = cv2.VideoCapture(0)
 ret,img = cap.read()
 lisst =[]
@@ -49,11 +50,14 @@ while(ret):
                   #      print("short blink")
                         lisst.clear()
                         lisst3.append("dot")
+                        lisst2.clear()
                     elif len(lisst) >7:
                  #       print("long blink")
                         lisst.clear()
+                        lisst2.clear()
                         lisst3.append("dash")
-                    if len(lisst2) >40:
+                    if len(lisst2) >20:
+
                    #     print("change letter")
                         cv2.putText(img, "Next letter!", (70,470), cv2.FONT_HERSHEY_PLAIN, 2,(255,255,255),2)
                    #     print(lisst3)
